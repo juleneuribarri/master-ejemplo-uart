@@ -7,10 +7,12 @@
 
 #define WAIT_TIME_MS 500
 DigitalOut led1(PA_10);
-DigitalIn boton(PC_2);
+DigitalIn boton(PB_5);
+//DigitalIn boton_tactil(PB_3);
+//Falta a y b
 
 int botonAnterior = 0;
-static UnbufferedSerial serial_port(PC_12, PD_2,9600);
+static UnbufferedSerial serial_port(PA_0, PA_1,9600);
 
 char datoRx[1];
 char datoTx;
